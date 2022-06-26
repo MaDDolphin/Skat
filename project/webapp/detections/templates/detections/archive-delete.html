@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+        Удаление срабатывания
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Удаление срабатывания</h1>
+        <h5><form method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger btn-lg" type="submit">Удалить срабатывание</button>
+        </form></h5>
+    </div>
+
+{% endblock %}

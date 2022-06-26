@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+        {{ cam.title }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>{{ cam.title }}</h1>
+        <p><img src= "/cam?link={{  cam.link }}" width="854" height="480"></p><br><br><br>
+        <a href="{% url 'cams-update' cam.id %}" class="btn btn-info">Редактировать</a>
+        <a href="{% url 'cams-delete' cam.id %}" class="btn btn-danger">Удалить</a>
+    </div>
+
+{% endblock %}

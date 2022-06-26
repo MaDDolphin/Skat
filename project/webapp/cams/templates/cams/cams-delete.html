@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+        Удаление камеры
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Удаление камеры</h1>
+        <h5><form method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger btn-lg" type="submit">Удалить камеру</button>
+        </form></h5>
+    </div>
+
+{% endblock %}

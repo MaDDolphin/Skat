@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static  'main/img/eyew.png' %}">
+    <title>{%  block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href={% static 'main/css/main.css' %}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/eyew.png' %}" alt="Лого">
+        <span class="logo">Скат</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="/home"><li><i class="fas fa-home"></i>Главная</li></a>
+            <a href="/cams"><li><i class="fas fa-camera"></i>Камеры</li></a>
+            <a href="/detections"><li><i class="far fa-folder-open"></i>Архив</li></a>
+            <a href="/admin"><li><i class="fas fa-sliders-h"></i>Настройки</li></a>
+            <a href="/cams/create"><li><button class="btn btn-outline-light btn-sm"><i class="fas fa-plus-circle"></i>Добавить камеру </button></li> </a>
+        </ul>
+    </aside>
+    <main>
+    {% block content %}
+    {% endblock %}    
+    </main> 
+</body>
+</html>

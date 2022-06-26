@@ -1,0 +1,106 @@
+body{
+    background: #333333;
+}
+
+aside{
+    position: fixed;
+
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #FF3333;
+}
+
+aside img{
+    width: 80px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: +10px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul{list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul i {
+    margin-right: 10px;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #FF3333;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+main .features{
+    margin: 100px 20%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 75%;
+
+}
+
+
+
+main .features h1 {font-size: 40px;margin: 20px 10%}
+main .features p {max-height: 400px; margin: 20px auto}
+main .features h6{font-size: 60px;margin: 20px 10%}
+main .features h5{margin: 20px 2%}
+main .features h4{margin: 20px 50%}
+main .alert-light{
+    float: left;
+    clear: both;
+    color: #181818;
+    background: #fff;
+    width: 680px;
+    margin: 25px 22% ;
+    text-align: center;
+}
+
+form{
+    margin-left: 29%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+main .features table {
+	width: 100%;
+    margin: 20px 5% ;
+
+    background: #181818;
+}
+main .features table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+main .features table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+    margin: 20px 10%
+}
+
+main .table-footer #row{
+    margin: 20px 120%
+}

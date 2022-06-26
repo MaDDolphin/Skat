@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+        Форма по добавлению камеры
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Форма по добавлению камеры</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.link }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-outline-success btn-lg" type="submit">Добавить камеру</button>
+        </form>
+    </div>
+
+{% endblock %}

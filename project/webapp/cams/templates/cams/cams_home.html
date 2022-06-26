@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+        Камеры
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Доступные камеры</h1>
+        <p>Ниже представлены доступные камеры</p>
+        {% if cams %}
+        <div class="cams-menu">
+        {% for el in cams %}
+
+            <div  class="alert alert-light" >
+                <h3>{{ el.title }}</h3>
+                <img src= {{ el.link }} width="640" height="360">
+                <br><br>
+                <a href="{% url 'cams-detail' el.id %}"class="btn btn-outline-danger bt-sm" target="_blank">Перейти к обработке</a>
+            </div>
+
+        {% endfor %}
+        {% else %}
+            <p>Нет доступных камер</p>
+        {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
